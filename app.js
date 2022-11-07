@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 //mongodb part
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://ApoorvPandey:Pandey9044@cluster0.xshfz4x.mongodb.net/Todo-list?retryWrites=true&w=majority", {useNewUrlParser: true});
 // mongo schema 
 const itemsSchema = {
     name: String,
