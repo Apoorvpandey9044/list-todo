@@ -1,6 +1,12 @@
+@keyframes animateBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, rgb(232, 128, 145) 50%, rgb(218, 169, 219) 50%);
+  animation: animateBg 10s linear infinite;
+  background-image: linear-gradient(0deg,#9d9fe2,#716bb2,#84e9e4,#806bbf,#508bb6,#1e7ba5,#265a8f,#22228a,#4b194f,#246a70,#7977eb,#0caac5);
+  background-size: 100% 1100%;
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -51,7 +57,7 @@ p {
   color: #00204a;
 }
 
-form {
+form.item {
   text-align: center;
   margin-left: 20px;
 }
